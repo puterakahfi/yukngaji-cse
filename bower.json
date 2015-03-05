@@ -23,6 +23,7 @@
     "fontawesome": "~4.3.0",
     "angular-ui-router": "~0.2.13",
     "karma-jasmine": "~0.1.0",
-    "bootstrap-material-design": "~0.2.2"
+    "bootstrap-material-design": "~0.2.2",
+    "angular-material": "~0.8.3"
   }
 }
