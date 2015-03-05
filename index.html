@@ -11,7 +11,7 @@
         <title>Yuk ngaji</title>
 
         <!-- Bootstrap core CSS -->
-     
+
         <!-- Custom styles for this template -->
         <link href="css/yukngaji-bootstrap.css" rel="stylesheet">
 
@@ -28,35 +28,46 @@
     <body>
 
         <div ng-app="yukngajiApp">
-            <!-- Static navbar -->
-            <div class="navbar navbar-primary" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" ui-sref="beranda">yukngaji <sup><b>beta</b></sup></a>
+            <div ng-controller="berandaCtrl">
+                <!-- Static navbar -->
+                <div class="navbar navbar-primary" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" ui-sref="beranda">yukngaji <sup><b>beta banget</b></sup></a>
+                        </div>
+
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a class="links" href="http://itdakwah.com" target="_blank">ITSD</a></li>
+                                <li><a ng-click="openAbout()"><span class="fa fa-info"></span> About yukngaji</a></li>
+                                <li><a href="#"><span class="fa fa-info"></span>  Petunjuk Penggunaan</a></li>
+                                <li><a ui-sref="saran"><span class="fa fa-question"></span> Saran</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
                     </div>
-
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a class="links" href="http://itdakwah.com" target="_blank">ITSD</a></li>
-                            <li><a href="#"><span class="fa fa-info"></span> About yukngaji</a></li>
-                            <li><a href="#"><span class="fa fa-info"></span>  Petunjuk Penggunaan</a></li>
-                            <li><a ui-sref="saran"><span class="fa fa-question"></span> Saran</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
                 </div>
-            </div>
-            <!-- Main component for a primary marketing message or call to action -->
-            <div class="container">
-                <div ui-view></div>
-            </div>
+                <!-- Main component for a primary marketing message or call to action -->
+                <div class="container">
+                    <div ui-view></div>
+                </div>
 
-            <div class="container text-center">
-                Made with love by <a href="http://www.itcjlabs.com" target="_blank">itcjlabs</a><br/>
-                situs ini masih dalam pengembangan. <br/>
-                build with <a href="http://fezvrasta.github.io/bootstrap-material-design">bootstrap material design</a><br/>
-                <a href="https://github.com/puterakahfi/yukngaji-cse" target="_blank"><span class="fa fa-git-square fa-3x"></span></a>
-            </div>
-        </div>
+                <div class="container text-center">
+                    Made with love by <a href="http://www.itcjlabs.com" target="_blank">itcjlabs</a><br/>
+                    situs ini masih dalam pengembangan. <br/>
+                    build with <a href="http://fezvrasta.github.io/bootstrap-material-design">bootstrap material design</a><br/>
+                    <a href="https://github.com/puterakahfi/yukngaji-cse" target="_blank"><span class="fa fa-git-square fa-2x"></span></a>
+                    <a href="https://www.facebook.com/ITSupportDakwah" target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
+                    <a href="https://twitter.com/IT4Dakwah" target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
+
+
+
+
+                </div>
+
+
+
+            </div> <!-- controller close -->
+        </div> <!-- yukngajiApp close -->
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -71,6 +82,10 @@
         <script src="js/app.js"></script>
         <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
         <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+
 
 
 

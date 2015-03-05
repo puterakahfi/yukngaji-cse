@@ -19,3 +19,14 @@ body{
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
 }
+
+sup {
+    top: -0.8em;
+}
+
+sub, sup {
+    font-size: 55%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
